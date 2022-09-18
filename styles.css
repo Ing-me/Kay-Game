@@ -1,0 +1,39 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+:root{
+    --color-text: #fff;
+    --bg-1 : #d1fae5;
+    --bg-2 : #10b981;
+    --font-size: 16px;
+    --cell-size: 150px;
+    --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-1);
+}
+.board{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;  
+    grid-template-columns: repeat(2, auto);
+}
+
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: var(--bg-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    color: #fff;
+}
