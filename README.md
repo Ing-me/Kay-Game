@@ -1,1 +1,1 @@
-# Kay-Game
+This game is about to create Kay game
